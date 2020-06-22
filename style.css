@@ -1,0 +1,116 @@
+/* main style sheet  */
+* {
+  box-sizing: //border-box;
+    margin: 0;
+  padding: 0;
+}
+
+/*---------------------Global Styles-----------------*/
+.section_padding {
+  padding: 0rem 0rem;
+  //border: 2px solid black;
+  margin: 0rem 0.9rem;
+  max-width: 1300px;
+  margin: auto;
+}
+
+/* ===========start of news ticker============= */
+.section-1 {
+  padding-top: 4rem;
+}
+
+.newstickercontainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.news-ticker-title {
+  margin: auto;
+  text-align: center;
+  background: rgb(200, 80, 109);
+  width: 4vw;
+  min-width: 10rem;
+  color: white;
+  padding: 0.4rem;
+}
+
+.news-ticker {
+  margin-left: 0;
+  padding: 0 0.2rem;
+  overflow: hidden;
+  margin-left: 0;
+}
+
+.news-ticker a {
+  font-size: 1.5rem;
+}
+
+.flex-headline-cont {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  white-space: nowrap;
+  padding-top: 0.2rem;
+}
+
+.ticker-item {
+  text-decoration: none;
+  color: black;
+}
+
+.controlls {
+  display: flex;
+  justify-content: center;
+  padding: 0.2rem;
+  cursor: pointer;
+  color: white;
+  margin-right: 0.4rem;
+}
+
+.rwd {
+  background: rgb(81, 118, 100);
+  padding: 0.5rem;
+}
+
+.tickerplay {
+  background: rgb(166, 235, 201);
+  padding: 0.5rem;
+}
+
+.pause {
+  background: rgb(200, 80, 109);
+  padding: 0.5rem;
+}
+
+.list1, .list2 {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+
+}
+.list1 li, .list2 li{
+    margin-right: 5rem;
+}
+/* ----------------news ticker media queries--------------- */
+@media screen and (min-width: 670px) {
+  .section-1 {
+    padding-top: 5rem;
+  }
+
+  .newstickercontainer {
+    flex-direction: row;
+    padding: 0 1vw;
+  }
+
+  .tickerMain {
+    top: 6.2rem;
+    padding: 2rem;
+  }
+
+  .news-ticker-title {
+    margin: 0 0.3rem;
+  }
+
+  .ticker-item {
+    line-height: 2.2rem;
+  }
